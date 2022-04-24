@@ -11,57 +11,108 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@1,500&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Weather App</title>
   </head>
-  <body><div class="Weather-app">
-    <div class="container">
-      <form id="search-forecast">
-      <label>Type to see your city weather forecast🌈</label>
-      <input type="text" id="city-input"/>
-      <input type="submit" value="Search" />
-      <input typer="submit" value="Current"/>
-</form>
-<section>
-   <h1>Tel Aviv</h1>
-  
-   <ul> <li>
-  Friday 05:00
-  </li><li>
-  Partly cloudy
-  </li>
-  </ul>
-  <div class="row">
-    <div class="col-6">
-      <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="partly_cloudy" 
-      />
-12 °C| °F
-    </div>
-<div class="col-6">
-  <div class="col-6">
-<ul>
-  <li> Precipitation: 0%</li>
-  <li> 
-    Humidity: 50%
-  </li><li>
-    Wind: 2km/h
-  </li>
-</ul>
+  <body>
+    <div class="weather-app">
+      <div class="container">
+        <form id="search-forecast">
+          <input type="text" id="city-input" />
+          <input type="submit" value="Search" id="button" />
+          <input typer="submit" value="Current" id="current" />
+        </form>
 
-  </div>
-      
-  </div>
-       <small>
-         <a href="https://github.com/haddara88/vanilla-weather-app" target="_blank">Open-source code</a>, by Haddara Gostomelsky
-       </small>   
-      
-    </div>
+        <h1>Tel Aviv</h1>
+        <ul>
+          <li>Friday 05:00</li>
+          <li>Partly cloudy</li>
+        </ul>
+        <div class="row">
+          <div class="col-6">
+            <div class="clearfix" class="weather-temperature">
+              <img
+                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                alt="partly_cloudy"
+                class="float-left"
+              />
+              <span class="float-left"
+                ><strong>12</strong>
+                <small class="units">°C| °F</small>
+              </span>
+            </div>
           </div>
-        
-      <script src="src/index.js"></script>
+          <div class="col-6">
+            <div class="col-6">
+              <ul>
+                <li>Precipitation: 0%</li>
+                <li>Humidity: 50%</li>
+                <li>Wind: 2km/h</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row row-cols-6 all-columns">
+          <div class="col-2">
+            Thursday 24/03
+            <br />
+            <img src="https://ssl.gstatic.com/onebox/weather/48/rain.png" />
+            <p class="temperature">14°C</p>
+          </div>
+          <div class="col-2">
+            Friday 25/03
+            <br />
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"
+            />
+            <p class="temperature">15°C</p>
+          </div>
+          <div class="col-2">
+            Saturday 26/03
+            <br />
+            <img src="https://ssl.gstatic.com/onebox/weather/48/sunny.png" />
+            <p class="temperature">17°C</p>
+          </div>
+          <div class="col">
+            Sunday 27/03
+            <br />
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"
+            />
+            <p class="temperature">18°C</p>
+          </div>
+          <div class="col-2">
+            Monday 28/03
+            <br />
+            <img src="https://ssl.gstatic.com/onebox/weather/48/sunny.png" />
+            <p class="temperature">21°C</p>
+          </div>
+          <div class="col-2">
+            Tuesday 29/03
+            <br />
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"
+            />
+            <p class="temperature">24°C</p>
+          </div>
+        </div>
+      </div>
+
+      <small>
+        <a
+          href="https://github.com/haddara88/vanilla-weather-app"
+          target="_blank"
+          >Open-source code</a
+        >, by Haddara Gostomelsky
+      </small>
     </div>
+
+    <script src="src/index.js"></script>
   </body>
 </html>
