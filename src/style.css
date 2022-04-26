@@ -1,6 +1,6 @@
 h1 {
-  color: pink;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #6fdae7;
+  font-family: Impact, Haettenschweiler, sans-serif;
   padding: 20px;
 }
 
@@ -9,11 +9,13 @@ h1 {
   margin: 0 auto;
   padding: 20px;
   border: 1px solid grey;
+  background: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: grey;
 }
 #city-input {
   background-color: #f9f7fe;
   border: none;
-  padding: 8px;
 }
 #button,
 #current {
@@ -34,6 +36,9 @@ h1 {
 }
 li {
   list-style: none;
+}
+li:first-letter {
+  text-transform: capitalize;
 }
 
 weather-temperature img {

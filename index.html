@@ -17,6 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@1,500&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
     <title>Weather App</title>
   </head>
@@ -29,10 +30,10 @@
           <input typer="submit" value="Current" id="current" />
         </form>
 
-        <h1>Tel Aviv</h1>
+        <h1 id="city"></h1>
         <ul>
-          <li>Friday 05:00</li>
-          <li>Partly cloudy</li>
+          <li>Last updated: <span id="date"> </span></li>
+          <li id="description"></li>
         </ul>
         <div class="row">
           <div class="col-6">
@@ -43,7 +44,7 @@
                 class="float-left"
               />
               <span class="float-left"
-                ><strong>12</strong>
+                ><strong id="temperature"></strong>
                 <small class="units">°C| °F</small>
               </span>
             </div>
@@ -51,9 +52,8 @@
           <div class="col-6">
             <div class="col-6">
               <ul>
-                <li>Precipitation: 0%</li>
-                <li>Humidity: 50%</li>
-                <li>Wind: 2km/h</li>
+                <li>Humidity: <span id="humidity"></span><span>%</span></li>
+                <li>Wind: <span id="wind"></span><span>km/h</span></li>
               </ul>
             </div>
           </div>
@@ -65,8 +65,7 @@
             <img src="https://ssl.gstatic.com/onebox/weather/48/rain.png" />
             <p class="temperature">14°C</p>
           </div>
-          <div class="col-2">
-            Friday 25/03
+          <div class="col-2" id="date">
             <br />
             <img
               src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"
@@ -104,13 +103,13 @@
         </div>
       </div>
 
-      <small>
+      <footer>
         <a
           href="https://github.com/haddara88/vanilla-weather-app"
           target="_blank"
           >Open-source code</a
         >, by Haddara Gostomelsky
-      </small>
+      </footer>
     </div>
 
     <script src="src/index.js"></script>
