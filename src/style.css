@@ -12,6 +12,8 @@ h1 {
 }
 #city-input {
   background-color: #f9f7fe;
+  border: none;
+  padding: 8px;
 }
 #button,
 #current {
@@ -34,17 +36,23 @@ li {
   list-style: none;
 }
 
-.weather-temperature img {
+weather-temperature img {
   margin-right: 10px;
-  height: 64px;
-  width: 64px;
+  height: 70px;
+  width: 70px;
 }
-.weather-temperature strong {
-  color: blue;
+strong {
+  color: black;
+  font-size: 62px;
+  line-height: 1;
+  font-weight: 400;
+  position: relative;
+  top: 15px;
 }
-.units {
+small {
   position: relative;
   font-size: 16px;
+  top: -15px;
 }
 .all-columns {
   margin: 40px;
