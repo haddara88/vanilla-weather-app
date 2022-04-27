@@ -16,6 +16,7 @@ h1 {
 #city-input {
   background-color: #f9f7fe;
   border: none;
+  padding: 8px;
 }
 #button,
 #current {
