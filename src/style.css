@@ -2,6 +2,8 @@ h1 {
   color: #6fdae7;
   font-family: Impact, Haettenschweiler, sans-serif;
   padding: 20px;
+  text-shadow: 1px 1px 2px black;
+  font-size: larger;
 }
 
 .weather-app {
@@ -9,9 +11,18 @@ h1 {
   margin: 0 auto;
   padding: 20px;
   border: 1px solid grey;
-  background: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+  background: linear-gradient(
+    122.3deg,
+    rgb(111, 71, 133) 14.6%,
+    rgb(232, 129, 166) 29.6%,
+    rgb(237, 237, 183) 42.1%,
+    rgb(244, 166, 215) 56.7%,
+    rgb(154, 219, 232) 68.7%,
+    rgb(238, 226, 159) 84.8%
+  );
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: grey;
+  color: black;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
 }
 #city-input {
   background-color: #f9f7fe;
@@ -20,20 +31,25 @@ h1 {
 }
 #button,
 #current {
-  background-color: #885df1;
+  background-color: #fb709b;
   border-radius: 3px;
   border: none;
   color: white;
   padding: 7px 10px;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
 }
 #button {
   background-color: #885df1;
 }
 #current {
-  background-color: #fc83a8;
+  background-color: #fb709b;
   border: none;
   padding: 7px 10px;
   text-align: center;
+}
+
+.image {
+  font-size: 50px;
 }
 li {
   list-style: none;
@@ -45,6 +61,12 @@ li:first-letter {
   margin-top: 20px;
   text-align: center;
   color: black;
+}
+#forecast {
+  padding: 30px;
+  color: black;
+  font-size: 30px;
+  font-weight: 400;
 }
 .weather-forecast-date {
   font-size: 16px;
@@ -76,4 +98,7 @@ strong {
 }
 .all-columns {
   margin: 40px;
+}
+#forecast:hover {
+  opacity: 0.7;
 }
